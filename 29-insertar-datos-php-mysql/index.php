@@ -31,7 +31,7 @@
                 $sql = "INSERT INTO todo_table(texto, completado) VALUES ('$texto', false)";
 
                 if($conexion -> query($sql) === true) {
-                    echo '<div><form action=""><input type="checkbox">'.$texto.'</input></form></div>';
+                    echo '<div><form action=""><input type="checkbox">'.$texto.'</form></div>';
                 }
 
             } 
