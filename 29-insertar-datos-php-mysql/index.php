@@ -16,7 +16,7 @@
         <?php
             $server = "localhost";
             $user = "root";
-            $password = "db951hfji";
+            $password = "fakepassword";
             $db = "test_todolist";
         
             $conexion = new mysqli($server, $user, $password, $db);
