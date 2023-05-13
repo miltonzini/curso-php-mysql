@@ -1,0 +1,2 @@
+-En esta versión no están las refactorizaciones que realicé en la anterior. Me reservo esas factorizaciones para el final del curso o de algún bloque del mismo.
+-Aún hay un bug: si se marca la casilla "mostrar todo" y luego se modifica alguna tarea, al recargar la página se vuelve a desactivar la primera casilla y se muestran, en consecuencia, solo las tareas pendientes. Una solución a esto sería crear una variable de sesión y guardar ahí el estado de la casilla.
