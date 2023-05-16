@@ -223,4 +223,6 @@ form{
 06: en **survey.php** el método recién llamado guarda "java" (como parámetro *$option*) en el atributo *optionSelected* del objeto de la clase Survey. 
 07: en **index.php** llamamos al método *vote()* del objeto *$survey*
 08: en **survey.php** la fución vote prepara la consulta sql dejando un placeholder *:opcion*. Luego ejecuta esa query completando el placeholder con la info contenida en survey->optionSelected ("java"). Esta consuilta incrementa en 1 la cantidad de votos para esa fila en la tabla sql.
-09: 
+09: se hace un condicional para chequear que la variable *showResults* sea true. En este caso es afirmativo así que se procede:
+
+[continuar. Línea 44 del md]

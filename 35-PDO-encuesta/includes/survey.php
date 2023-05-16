@@ -21,11 +21,11 @@
         }
         
         public function showResults(){
-            return $this->connect()->query('SELECT * FROM lenguajes'); // comentario x
+            return $this->connect()->query('SELECT * FROM lenguajes');
         }
 
         public function getTotalVotes(){
-            $query = $this->connect()->query('SELECT SUM(votos) AS votos_totales FROM lenguajes');
+            $query = $this->connect()->query('SELECT SUM(votos) AS votos_totales FROM lenguajes'); // comentario x
             $this->totalVotes = $query->fetch(PDO::FETCH_OBJ)->votos_totales;
             return $this->totalVotes;
         }
@@ -34,6 +34,6 @@
             return round(($votes / $this->totalVotes) * 100, 0);
         }
     }
-// Comentario X. Aquí no necesitamos preparar la consulta ni llamar a execute, ya que no tenemos valores que validar, a diferencia de la consulta anterior.
+
 // Comentario Y. El "AS votos_totales" es una forma en sql de poner un alias a la tabla de resultados
 ?>
