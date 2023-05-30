@@ -89,7 +89,10 @@
 ?>
 ```
 # Comentarios logout.php
-
+01: se incluye ese archivo que contiene la clase UserSession.
+02: se instancia esa clase para poder usar sus métodos
+03: se usa el método para cerrar sesión
+04: redirección a index.php
 
 
 # Código user_session.php
