@@ -1,0 +1,40 @@
+base de datos: test_sesiones_roles
+pass: db951hfji
+
+Tablas:
+# roles
+|ID	|rol		|
+|1	|admin		|
+|2	|costumer	|
+|3	|guest		|
+
+# usuarios
+|ID	|username	|nombre completo| password	|descripcion						|
+|1	|carlos		|Carlos Pérez	|carlosabc 	| "Carlos Abogado, cliente de Buenos Aires."		|	
+|2	|ana		|Ana Gómez	|anaabc		| "Ana Martillera administradora"			|
+|3	|juan		|Juan Pérez	|juanabc	| "Juan Perez usuario genérico con acceso limitado"	|
+
+*las contraseñas van hasheadas en la base de datos, respectivamente son:
+c9bf03d747237b22ef422817c529df1b
+3dae65b833f3dba1882429d871f17df1
+b0cb83d0559720807cf58be5abdf8b24
+
+
+
+
+# asignacion_roles
+|ID	|usuarios_id	|roles_id	|
+|1	|1		|2		|
+|2	|2		|1		|
+|3	|3		|3		|
+
+
+[[[  hasta acá está hecho en phpMyAdmin, continuar ]]]
+
+Vistas:
+-Home: lorem + link a loguearse + link a registrarse
+-login
+-signup: por defecto asigna el rol "guest". Pedir username, nombre completo, password y descripción. [dejar para lo último]
+-adminPanel: nombre completo del admin + descripción
+-guestHome: nombre completo del invitado + descripción
+-customerHome: nombre completo del cliente + descripción
